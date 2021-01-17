@@ -1,0 +1,71 @@
+{
+    "set view variabels": {
+        "prefix": "set",
+        "body": [
+          "\\$this->set['${1:viewVarName}', \\$${2:varName}];"
+        ],
+        "description": "Cake function to set varaiables for view",
+    },
+    
+    "Set options": {
+        "prefix": "opt",
+        "body": [
+          "\\$options['${1:Name}'] = \\$this->${2:Modelname}->find('${3|all,first,list,count,threaded,neighbors|}', [",
+          "\t${4:params}",
+          "]);",
+        ],
+        "description": "Set options for using in selectet input",
+    },
+
+    "Data Request": {
+        "prefix": "datarqu",
+        "body": [
+          "\\$this->request->data;"
+        ],
+        "description": "Data Request"
+    },
+
+    "Create new data in Model": {
+        "prefix": "create",
+        "body": [
+          "\\$this->${1:ModelName}->create();"
+        ],
+        "description": "Create new data in Model"
+    },
+
+    "Save data in Model": {
+        "prefix": "save",
+        "body": [
+          "\\$this->${1:ModelName}->${2|save,saveAll|}(${3:savingData});"
+        ],
+        "description": "Save data in Model"
+    },
+
+    "Set flash": {
+        "prefix": "setflash",
+        "body": [
+          "\\$this->Session->setflash('${1:message}', '${2|flash_success,flash_error|}';"
+        ],
+        "description": "Set flash message (depricater version)"
+    },
+
+    "Redirect URL": {
+        "prefix": "redirect",
+        "body": [
+          "\\$this->redirect('${1:URL}');"
+        ],
+        "description": "Redirect URL"
+    },
+
+    "Auth user": {
+        "prefix": "authUser",
+        "body": [
+          "\\$this->Auth->user('${1:key}') === '$2';"
+        ],
+        "description": "Auth user"
+    },
+
+
+
+
+}
