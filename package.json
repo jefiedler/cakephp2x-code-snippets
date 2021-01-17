@@ -14,6 +14,22 @@
             {
                 "language": "php",
                 "path": "./snippets/snippets.code-snippets"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/Model/retrievingData.code-snippets"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/Model/linkingModels.code-snippets"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/Model/validation.code-snippets"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/Model/validationRules.code-snippets"
             }
         ]
     }
