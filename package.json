@@ -30,6 +30,10 @@
             {
                 "language": "php",
                 "path": "./snippets/Model/validationRules.code-snippets"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/Model/basicSnippets.code-snippets"
             }
         ]
     }
