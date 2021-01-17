@@ -1,0 +1,20 @@
+{
+    "name": "cakephp2x-code-snippets",
+    "displayName": "cakePHP2x-code-snippets",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.52.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "php",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}
