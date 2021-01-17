@@ -1,0 +1,295 @@
+{   
+    "Rule alphaNumeric": {
+        "prefix": "ruleAlphaNumeric",
+        "body": [
+          "'rule' => 'alphaNumeric',"
+        ],
+        "description": "Validation rule alphaNumeric"
+    },
+
+    "Rule isUnique": {
+        "prefix": "ruleIsUnique",
+        "body": [
+          "'rule' => 'isUnique',"
+        ],
+        "description": "Validation rule isUnique"
+    },
+
+    "Rule notBlank": {
+        "prefix": "ruleNotBlank",
+        "body": [
+          "'rule' => 'notBlank',"
+        ],
+        "description": "Validation rule notBlank"
+    },
+
+    "Rule numeric": {
+        "prefix": "ruleNumeric",
+        "body": [
+          "'rule' => 'numeric',"
+        ],
+        "description": "Validation rule numeric"
+    },
+
+    "Rule phone": {
+        "prefix": "rulePhone",
+        "body": [
+          "'rule' => 'phone',"
+        ],
+        "description": "Validation rule phone"
+    },
+
+    "Rule url": {
+        "prefix": "ruleurl",
+        "body": [
+          "'rule' => 'url',"
+        ],
+        "description": "Validation rule url"
+    },
+
+    "Rule boolean": {
+        "prefix": "ruleBoolean",
+        "body": [
+          "'rule' => ['boolean'],"
+        ],
+        "description": "Validation rule boolean"
+    },
+
+    "Rule lengthBetween": {
+        "prefix": "ruleLengthBetween",
+        "body": [
+          "'rule' => ['lengthBetween', ${1:min}, ${2:max}],"
+        ],
+        "description": "Rule lengthBetween"
+    },
+
+    "Rule blank": {
+        "prefix": "ruleBlank",
+        "body": [
+          "'rule' => 'blank',",
+          "'one' => 'create',"
+        ],
+        "description": "Rule blank"
+    },
+
+    "Rule cc": {
+        "prefix": "ruleCc",
+        "body": [
+          "'rule' => ['cc', '${1:type}', ${2:deep(default false)}, ${3:regex(default null)}],"
+        ],
+        "description": "Rule for kredit cards, show for more discription to cakePHP 2.x docu"
+    },
+
+    "Rule comparison": {
+        "prefix": "ruleComparison",
+        "body": [
+          "'rule' => ['comparison', '${1:operator}', ${2:int}],"
+        ],
+        "description": "Rule comparison"
+    },
+    
+    "Rule custom": {
+        "prefix": "ruleCustom",
+        "body": [
+          "'rule' => ['custom', ${1:regex}],"
+        ],
+        "description": "Rule custom"
+    },
+    
+    "Rule date": {
+        "prefix": "ruleDate",
+        "body": [
+          "'rule' => ['date', '${1|dmy, mdy, ymd, dMy, Mdy, My, my, ym, y|}'],"
+        ],
+        "description": "Rule date"
+    },
+
+    "Rule datetime": {
+        "prefix": "ruleDateTime",
+        "body": [
+          "'rule' => ['datetime', '${1|dmy, mdy, ymd, dMy, Mdy, My, my|}'],"
+        ],
+        "description": "Rule date"
+    },
+
+    "Rule decimal": {
+        "prefix": "ruleDecimal",
+        "body": [
+          "'rule' => ['decimal', ${1:int}'],"
+        ],
+        "description": "Rule decimal"
+    },
+
+    "Rule email": {
+        "prefix": "ruleEmail",
+        "body": [
+          "'rule' => ['email'],"
+        ],
+        "description": "Rule email"
+    },
+
+    "Rule email with valid host": {
+        "prefix": "ruleEmailWithHost",
+        "body": [
+          "'rule' => ['email', true],"
+        ],
+        "description": "Rule email"
+    },
+
+    "Rule equalTo": {
+        "prefix": "ruleEqualTo",
+        "body": [
+          "'rule' => ['equalTo', '${1:compareTo}'],"
+        ],
+        "description": "Rule equalTo"
+    },
+
+    "Rule extension": {
+        "prefix": "ruleExtension",
+        "body": [
+          "'rule' => ['gif', 'jpeg', 'png', 'jpg'],"
+        ],
+        "description": "Rule extension"
+    },
+
+    "Rule fileSize": {
+        "prefix": "ruleFileSize",
+        "body": [
+          "'rule' => ['fileSize', '${1:operator}', '${2:size}],"
+        ],
+        "description": "Rule fileSize"
+    },
+
+    "Rule inList": {
+        "prefix": "ruleInList",
+        "body": [
+          "'rule' => ['inList', '${1:array}', ${2:caseInsensitve(default false}],"
+        ],
+        "description": "Rule inList"
+    },
+
+    "Rule ip": {
+        "prefix": "ruleIp",
+        "body": [
+          "'rule' => ['ip', '${1|IPv4, IPv6, both}'],"
+        ],
+        "description": "Rule ip"
+    },
+
+    "Rule luhn": {
+        "prefix": "ruleLuhn",
+        "body": [
+          "'rule' => 'luhn',"
+        ],
+        "description": "Rule luhn"
+    },
+
+    "Rule maxLength": {
+        "prefix": "ruleMaxLength",
+        "body": [
+          "'rule' => ['maxLength', ${1:int}],"
+        ],
+        "description": "Rule maxLength"
+    },
+
+    "Rule maxLengthBytes": {
+        "prefix": "ruleMaxLengthBytes",
+        "body": [
+          "'rule' => ['maxLengthBytes', ${1:int}],"
+        ],
+        "description": "Rule maxLengthBytes"
+    },
+
+    "Rule minLengthBytes": {
+        "prefix": "ruleMinLengthBytes",
+        "body": [
+          "'rule' => ['MinLengthBytes', ${1:int}],"
+        ],
+        "description": "Rule MinLengthBytes"
+    },
+
+    "Rule minLength": {
+        "prefix": "ruleMinLength",
+        "body": [
+          "'rule' => ['minLength', ${1:int}],"
+        ],
+        "description": "Rule minLength"
+    },
+
+    "Rule money": {
+        "prefix": "ruleMoney",
+        "body": [
+          "'rule' => ['money', '${1|left, right|}'],"
+        ],
+        "description": "Rule money"
+    },
+
+    "Rule postal": {
+        "prefix": "rulePostal",
+        "body": [
+          "'rule' => ['postal', null, '${1:country}'],"
+        ],
+        "description": "Rule postal"
+    },
+
+    "Rule naturalNumber": {
+        "prefix": "ruleNaturalNumber",
+        "body": [
+          "'rule' => ['naturalNumber', ${1:allowZero}],"
+        ],
+        "description": "Rule naturalNumber"
+    },
+
+    "Rule multiple": {
+        "prefix": "ruleMultiple",
+        "body": [
+          "'rule' => ['multiple', [",
+          "\t'in'  => [${1:option}],",
+          "\t'min' => ${2:int},",
+          "\t'max' => ${3:int}",
+          "]],"
+        ],
+        "description": "Rule multiple"
+    },
+
+    "Rule range": {
+        "prefix": "ruleRange",
+        "body": [
+          "'rule' => ['range', ${1:int}, ${2:int}],"
+        ],
+        "description": "Rule range"
+    },
+    
+    "Rule ssn": {
+        "prefix": "ruleSsn",
+        "body": [
+          "'rule' => ['ssn', null, '${1:country}'],"
+        ],
+        "description": "Rule ssn"
+    },
+
+    "Rule time": {
+        "prefix": "ruleTime",
+        "body": [
+          "'rule' => 'time',"
+        ],
+        "description": "Rule time"
+    },
+
+    "Rule uploadError": {
+        "prefix": "ruleUploadError",
+        "body": [
+          "'rule' => 'uploadError',"
+        ],
+        "description": "Rule ssn"
+    },
+
+    "Rule url strict": {
+        "prefix": "ruleUrlStrict",
+        "body": [
+          "'rule' => ['url', true],"
+        ],
+        "description": "Rule url strict"
+    },
+
+}
