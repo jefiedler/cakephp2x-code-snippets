@@ -17,7 +17,7 @@
             },
             {
                 "language": "php",
-                "path": "./snippets/controller_snippets.code-snippets"
+                "path": "./snippets/Controller/controller_snippets.code-snippets"
             }
         ]
     }
