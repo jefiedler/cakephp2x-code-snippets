@@ -1,0 +1,34 @@
+{
+    "hasOne": {
+        "prefix": "hasOne",
+        "body": [
+          "public \\$haseOne = ['${1:ModelName}', $0];"
+        ],
+        "description": "hasOne"
+    },
+
+    "belongsTo": {
+        "prefix": "belongsTo",
+        "body": [
+          "public \\$belongsTo = ['${1:ModelName}', $0];"
+        ],
+        "description": "belongsTo"
+    },
+
+    "hasMany": {
+        "prefix": "hasMany",
+        "body": [
+          "public \\$hasMany = ['${1:ModelName}', $0];"
+        ],
+        "description": "hasMany"
+    },
+
+    "hasAndBelongsToMany": {
+        "prefix": "habtm",
+        "body": [
+          "public \\$hasAndBelongsToMany = ['${1:ModelName}', $0];"
+        ],
+        "description": "hasAndBelongsToMany"
+    },
+    
+}
