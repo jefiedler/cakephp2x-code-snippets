@@ -1,0 +1,90 @@
+{
+    "Basic Validation": {
+        "prefix": "valiBasic",
+        "body": [
+            "public \\$validate = [",
+            "\t$0",
+            "];"
+        ],
+        "description": "Basic validation"
+    },
+
+    "simple rule": {
+        "prefix": "valiRuleSimple",
+        "body": [
+          "\t'${1:fieldName}' => '${2:rule}',",
+          "\t'message' => '${2:Your Error Message}'",
+          "$0",
+        ],
+        "description": "Add simple rule with cake defult rules"
+    },
+
+    "Add regex validation": {
+        "prefix": "valiRuleRegex",
+        "body": [
+          "'${1:fieldName}' => [",
+          "\t'rule' => '${2:regex}',",
+          "\t'message' => '${3:Your Error Message}'",
+          "\t$0",
+          "],",
+        ],
+        "description": "Add regex validation"
+    },
+
+    "Add multifield validation": {
+        "prefix": "valiMultiField",
+        "body": [
+          "'${1:fieldName1}' => [",
+          "\t'rule' => '${2:rule}',",
+          "\t'message' => '${3:Your Error Message}'",
+          "\t$0",
+          "],",
+          "'${4:fieldName2}' => [",
+          "\t'rule' => '${5:rule}',",
+          "\t'message' => '${6:message}'",
+          "\t$0",
+          "],",
+        ],
+        "description": "Add multi field validation"
+    },
+
+    "Multi validation rule": {
+        "prefix": "valiMultiRule",
+        "body": [
+            "'${1:ruleName}' => [",
+            "\t'rule' => '${2:rule}',",
+            "],"
+        ],
+        "description": "Add validation",
+    },
+
+    "Validation param on": {
+        "prefix": "valiParamOn",
+        "body": [
+          "'on' => '${1|create, update|}',"
+        ],
+        "description": "Validation param on"
+    },
+
+    "Validation param required": {
+        "prefix": "valiParamRequired",
+        "body": [
+          "'required' => '${1|true, create, update|}',"
+        ],
+        "description": "Validation param required"
+    },
+
+    "Validation param allowEmpty": {
+        "prefix": "valiParamAllowEmpty",
+        "body": [
+          "'allowEmpty' => false,"
+        ],
+        "description": "Validation param allowEmpty"
+    },
+
+
+
+
+    
+
+}
