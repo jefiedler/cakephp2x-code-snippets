@@ -1,0 +1,38 @@
+{
+    "Cake deflaut componentn initialize": {
+        "prefix": "compDefault",
+        "body": [
+            "public function initialize(Controller \\$controller = null) {",
+            "\t //Overwirte cake default",
+            "}"
+        ],
+        "description": "Component initialisation overwrite by cake default",
+    },
+
+    "Component initialize": {
+        "prefix": "compIni",
+        "body": [
+            "public function initialize (Controller \\$controller = null) {",
+            "\t\\$this->Controller = \\$controller;",
+            "\tif (\\$controller === null) \\$this->Controller = new Controller();",
+            "}"
+        ],
+        "description": "Initialize Component with new Controller",
+    },
+
+    "Controller load": {
+        "prefix": "compLoadClass",
+        "body": [
+            "\\$this->${1:ClassName} = ClassRegistry::init('${2:Class}');"
+        ],
+        "description": "Load a Controller class into a component.",
+    },
+    
+    "Compoent function initialize": {
+        "prefix": "compFunIniti",
+        "body": [
+            "\\$this->${1:ComponentName}->initialize();"
+        ],
+        "description": "Call the initialize function from a exsiting Component.",
+    },
+}
