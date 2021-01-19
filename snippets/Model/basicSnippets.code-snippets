@@ -1,0 +1,9 @@
+{
+    "contain": {
+        "prefix": "contain",
+        "body": [
+          "\\$this->contain(['${1:ModelName}']);"
+        ],
+        "description": "contain"
+    },
+}

@@ -1,0 +1,131 @@
+{
+    "Param condition": {
+        "prefix": "condition",
+        "body": [
+          "'condition' => [",
+          "\t '${1:ModelName}.${2:field}' => ${3:value},",
+          "],"
+        ],
+        "description": "Param condition"
+    },
+
+    "Param recursive": {
+        "prefix": "recursive",
+        "body": [
+          "'recursive' => ${1:int},"
+        ],
+        "description": "Param recursive"
+    },
+
+    "Param fields": {
+        "prefix": "fields",
+        "body": [
+          "'fields' => [",
+          "\t'${1:ModelName}.${2:field1}',",
+          "],"
+        ],
+        "description": "Param fields"
+    },
+
+    "Param order": {
+        "prefix": "order",
+        "body": [
+          "'order' => [",
+          "\t'${1:ModelName}.${2:field1}',",
+          "],"
+        ],
+        "description": "Param order"
+    },
+
+    "Param group": {
+        "prefix": "group",
+        "body": [
+          "'group' => [",
+          "\t'${1:ModelName}.${2:field}',",
+          "],"
+        ],
+        "description": "Param group"
+    },
+
+    "Param limit": {
+        "prefix": "limit",
+        "body": [
+          "'limit' => ${1:int},"
+        ],
+        "description": "Param limit"
+    },
+
+    "Param page": {
+        "prefix": "page",
+        "body": [
+          "'page' => ${1:int},"
+        ],
+        "description": "Param page"
+    },
+
+    "Param offset": {
+        "prefix": "offset",
+        "body": [
+          "'offset' => ${1:int},"
+        ],
+        "description": "Param offset"
+    },
+
+    "Param callbacks": {
+        "prefix": "callbacks",
+        "body": [
+          "'callbacks' => ${1|true,false,'before','after'|},"
+        ],
+        "description": "Param callbacks"
+    },
+
+    "Find by Query": {
+        "prefix": "query",
+        "body": [
+          "\\$this->${1:ModelName}->query(\"${2:Query}\");"
+        ],
+        "description": "Find by Query"
+    },
+
+    "SQL boolean OR in same field": {
+        "prefix": "sfOR",
+        "body": [
+          "'OR' => [",
+          "\t['${1:ModelName}'.'${2:field}' => ${3:condition}],",
+          "\t['${1:ModelName}'.'${2:field}' => ${4:condition}],",
+          "],"
+        ],
+        "description": "SQL boolean OR"
+    },
+
+    "SQL boolean OR": {
+        "prefix": "OR",
+        "body": [
+          "'OR' => [",
+          "\t'${1:ModelName}'.'${2:field1}' => ${3:condition},",
+          "\t'${4:ModelName}'.'${5:field2}' => ${6:condition},",
+          "],"
+        ],
+        "description": "SQL boolean OR"
+    },
+
+    "SQL boolean AND": {
+        "prefix": "AND",
+        "body": [
+          "'AND' => [",
+          "\t['${1:ModelName}'.'${2:field}' => ${3:condition}],",
+          "],"
+        ],
+        "description": "SQL boolean AND"
+    },
+
+    "SQL boolean NOT": {
+        "prefix": "NOT",
+        "body": [
+          "'NOT' => [",
+          "\t['${1:ModelName}'.'${2:field}' => ${3:condition}],",
+          "],"
+        ],
+        "description": "SQL boolean NOT"
+      }
+}
