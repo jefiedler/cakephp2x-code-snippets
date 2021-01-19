@@ -1,0 +1,53 @@
+{
+    "new_class": {
+        "prefix": "nclass",
+        "body": ["class ${1:className} extends ${2|AppController,AppModel,Component|} {",
+            "\t$0",
+            "}",
+        ],
+        "description": "Add in a new php file the Class",
+    },
+    
+    "new_Function": {
+        "prefix": "nfunc",
+        "body": [
+          "${1|private, public, static|} function ${2:functionName}(${3:pram}) {",
+          "\t$4",
+          "}"
+        ],
+        "description": "Create a private Function"
+    },
+
+    "pr": {
+        "prefix": "pr",
+        "body": [
+            "pr($0);exit;"
+        ],
+        "description": "CakePHP: pr();exit;"
+    },
+
+    "Load Helpers": {
+        "prefix": "nhelper",
+        "body": [
+            "public \\$helpers = ['${1:helperName}',]"
+        ],
+        "description": "Load Helpers"
+    },
+
+    "Load Models": {
+        "prefix": "nuses",
+        "body": [
+          "public \\$uses = ['${1:ModelName}',];"
+        ],
+        "description": "Load Models"
+    },
+
+    "Load Components": {
+        "prefix": "ncompon",
+        "body": [
+          "public \\$components = ['${1:ComponentName}',];"
+        ],
+        "description": "Load Components"
+    },
+        
+}
